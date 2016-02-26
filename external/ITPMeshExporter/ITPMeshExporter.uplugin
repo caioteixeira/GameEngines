@@ -1,0 +1,18 @@
+{
+	"FileVersion": 3,
+	"FriendlyName": "ITP Mesh Exporter",
+	"Version": 1,
+	"VersionName": "1.0",
+	"CreatedBy": "",
+	"CreatedByURL": "",
+	"Category": "Other",
+	"Description": "Exports StaticMeshes to itpmesh2 format",
+	"EnabledByDefault": false,
+	"Modules": [
+		{
+			"Name": "ITPMeshExporter",
+			"Type": "Developer",
+			"LoadingPhase": "Default"
+		}
+	]
+}

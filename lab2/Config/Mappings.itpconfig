@@ -1,0 +1,11 @@
+{
+	"ActionMappings":[
+		{ "name": "Quit", "key": 27 },
+		{ "name": "Recenter", "key": 114 },
+		{ "name": "Jump", "key": 32 }
+	],
+	"AxisMappings":[
+		{ "name": "Forward", "posKey": 119, "negKey": 115 },
+		{ "name": "Left", "posKey": 97, "negKey": 100 }
+	]
+}
