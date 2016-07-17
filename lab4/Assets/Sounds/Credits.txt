@@ -1,0 +1,4 @@
+AsteroidDie.wav from timgormly on freesound.org: http://www.freesound.org/people/timgormly/sounds/170146/
+Laser.wav from Julien Matthey on freesound.org: http://www.freesound.org/people/Julien%20Matthey/sounds/268343/
+ShipDie.wav from Bird_man on freesound.org: http://www.freesound.org/people/Bird_man/sounds/275155/
+ShipEngine.wav Fire Loop by Iwan 'qubodup' Gabovitch http://opengameart.org/users/qubodup

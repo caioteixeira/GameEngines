@@ -1,0 +1,274 @@
+{
+	"metadata":{
+		"type":"itplevel",
+		"version":1
+	},
+	"world":{
+		"ambientLight":[0.2, 0.2, 0.2]
+	},
+	"actors":[
+		{
+			"type":"Actor",
+			"properties":{
+				"position":[0.0, 0.0, 1000.0],
+				"scale":0.5
+			},
+			"updatedComponents":[
+			],
+			"newComponents":[
+				{
+					"type":"MeshComponent",
+					"update":"PostTick",
+					"properties":{
+						"mesh":"Meshes/LightSphere.itpmesh2"
+					}
+				},
+				{
+					"type":"PointLightComponent",
+					"update":"PostTick",
+					"properties":{
+						"diffuseColor":[0.3, 0.3, 0.3],
+						"innerRadius":50000.0,
+						"outerRadius":100000.0,
+						"specularColor":[0.5, 0.5, 0.5],
+						"specularPower":10.0
+					}
+				}
+			]
+		},
+		{
+			"type":"Actor",
+			"properties":{
+				"position":[0.0, 0.0, 50.0],
+				"scale":0.5
+			},
+			"updatedComponents":[
+			],
+			"newComponents":[
+				{
+					"type":"MeshComponent",
+					"update":"PostTick",
+					"properties":{
+						"mesh":"Meshes/LightSphere.itpmesh2",
+						"textureIndex":1
+					}
+				},
+				{
+					"type":"PointLightComponent",
+					"update":"PostTick",
+					"properties":{
+						"diffuseColor":[0.0, 1.0, 0.0],
+						"innerRadius":125.0,
+						"outerRadius":250.0,
+						"specularColor":[0.5, 1.0, 0.5],
+						"specularPower":10.0
+					}
+				}
+			]
+		},
+		{
+			"type":"Actor",
+			"properties":{
+				"position":[0.0, 650.0, 140.0],
+				"scale":0.5
+			},
+			"updatedComponents":[
+			],
+			"newComponents":[
+				{
+					"type":"MeshComponent",
+					"update":"PostTick",
+					"properties":{
+						"mesh":"Meshes/LightSphere.itpmesh2",
+						"textureIndex":2
+					}
+				},
+				{
+					"type":"PointLightComponent",
+					"update":"PostTick",
+					"properties":{
+						"diffuseColor":[0.0, 0.0, 1.0],
+						"innerRadius":125.0,
+						"outerRadius":250.0,
+						"specularColor":[0.5, 0.5, 1.0],
+						"specularPower":10.0
+					}
+				}
+			]
+		},
+		{
+			"type":"Actor",
+			"properties":{
+				"position":[650.0, 0.0, -40.0],
+				"scale":0.5
+			},
+			"updatedComponents":[
+			],
+			"newComponents":[
+				{
+					"type":"MeshComponent",
+					"update":"PostTick",
+					"properties":{
+						"mesh":"Meshes/LightSphere.itpmesh2",
+						"textureIndex":3
+					}
+				},
+				{
+					"type":"PointLightComponent",
+					"update":"PostTick",
+					"properties":{
+						"diffuseColor":[1.0, 0.0, 0.0],
+						"innerRadius":50.0,
+						"outerRadius":400.0,
+						"specularColor":[1.0, 0.5, 0.5],
+						"specularPower":10.0
+					}
+				}
+			]
+		},
+		{
+			"type":"Actor",
+			"properties":{
+				"position":[0.0, 0.0, 0.0],
+				"scale":5.0
+			},
+			"updatedComponents":[
+			],
+			"newComponents":[
+				{
+					"type":"MeshComponent",
+					"update":"PostTick",
+					"properties":{
+						"mesh":"Meshes/Platform.itpmesh2"
+					}
+				},
+				{
+					"type":"BoxComponent",
+					"update":"PostTick",
+					"properties":{
+						"mesh":"Meshes/Platform.itpmesh2",
+						"walkable":true
+					}
+				}
+			]
+		},
+		{
+			"type":"Actor",
+			"properties":{
+				"position":[0.0, 650.0, 90.0],
+				"scale":5.0
+			},
+			"updatedComponents":[
+			],
+			"newComponents":[
+				{
+					"type":"MeshComponent",
+					"update":"PostTick",
+					"properties":{
+						"mesh":"Meshes/Platform.itpmesh2"
+					}
+				},
+				{
+					"type":"BoxComponent",
+					"update":"PostTick",
+					"properties":{
+						"mesh":"Meshes/Platform.itpmesh2",
+						"walkable":true
+					}
+				}
+			]
+		},
+		{
+			"type":"Actor",
+			"properties":{
+				"position":[650.0, 0.0, -90.0],
+				"scale":5.0
+			},
+			"updatedComponents":[
+			],
+			"newComponents":[
+				{
+					"type":"MeshComponent",
+					"update":"PostTick",
+					"properties":{
+						"mesh":"Meshes/Platform.itpmesh2"
+					}
+				},
+				{
+					"type":"BoxComponent",
+					"update":"PostTick",
+					"properties":{
+						"mesh":"Meshes/Platform.itpmesh2",
+						"walkable":true
+					}
+				}
+			]
+		},
+		{
+			"type":"Player",
+			"properties":{
+				"position":[0.0, 0.0, 200.0],
+				"respawnPosition":[0.0, 0.0, 200.0]
+			},
+			"updatedComponents":[
+				{
+					"type":"SkeletalMeshComponent",
+					"properties":{
+						"mesh":"Meshes/SK_Mannequin.itpmesh2",
+						"skeleton":"Anims/SK_Mannequin.itpskel"
+					}
+				},
+				{
+					"type":"CameraComponent",
+					"properties":{
+						"horizontalDist": [300.0, 325.0, 0.0],
+						"verticalDist": [300.0, 300.0, 0.0],
+						"targetOffset": 250.0,
+						"springConstant": 200.0
+					}
+				},
+				{
+					"type":"CharacterMoveComponent",
+					"properties":{
+						"linearSpeed":300.0,
+						"horizontalSpeed":300.0,
+						"jumpForceZ":2000.0,
+						"animations":{
+							"idle":"Anims/ThirdPersonIdle.itpanim2",
+							"run":"Anims/ThirdPersonRun.itpanim2",
+							"jumpStart":"Anims/ThirdPersonJump_Start.itpanim2",
+							"jump":"Anims/ThirdPersonJump_Loop.itpanim2",
+							"land":"Anims/ThirdPersonJump_End.itpanim2",
+							"fall":"Anims/ThirdPersonJump_Loop.itpanim2"
+						}
+					}
+				}
+			],
+			"newComponents":[
+				{
+					"type":"BoxComponent",
+					"update":"PostTick",
+					"properties":{
+						"mesh":"Meshes/SK_Mannequin.itpmesh2"
+					}
+				}
+			]
+		},
+		{
+			"type":"KillVolume",
+			"properties":{
+				"position":[0.0, 0.0, -500.0]
+			},
+			"updatedComponents":[
+				{
+					"type":"BoxComponent",
+					"properties":{
+						"scale":[10000.0, 10000.0, 1.0]
+					}
+				}
+			],
+			"newComponents":[
+			]
+		}
+	]
+}
