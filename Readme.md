@@ -24,4 +24,4 @@ The shader that renders meshes using the Phong Lighting model.
 [![PrintScreen](https://raw.githubusercontent.com/caioteixeira/GameEngines/master/images/demo.png)](https://www.youtube.com/watch?v=rAw8Tdoq0Gw&feature=youtu.be)
 
 ## How to Compile
-Just import the project on Visual Studio 2013 or XCode and compile it. :)
+Just import the project on Visual Studio 2013 and compile it. :)
